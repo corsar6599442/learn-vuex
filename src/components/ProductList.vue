@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Product List</h1>
+      <h1>Каталог товаров</h1>
       <img
         v-if="loading"
         src="https://i.imgur.com/JfPpwOA.gif"
@@ -11,7 +11,7 @@
           <button
             :disabled="!productIsInStock(product)"
             @click="addProductToCart(product)"
-          >Add to cart</button>
+          >Добавить в корзину</button>
         </li>
       </ul>
     </div>
